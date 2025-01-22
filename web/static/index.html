@@ -5,13 +5,13 @@
     <script>
         function loadData() {
             console.log("clicked!!");
-            // fetch("/api/data")
-            //     .then(resp => resp.json())
-            //     .then(data => {
-            //         console.log(data.message);
-            //         const d = document.getElementById("dataLabel");
-            //         d.innerHTML = data.message;
-            //     })
+            fetch("/api/data")
+                .then(resp => resp.json())
+                .then(data => {
+                    console.log(data.message);
+                    const d = document.getElementById("dataLabel");
+                    d.innerHTML = data.message;
+                })
            
         }
     </script>
