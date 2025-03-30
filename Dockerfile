@@ -11,7 +11,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application files into the container
 COPY . /app
 
-EXPOSE 5050
+EXPOSE 5000
 
 # Define the command to run the Flask app
 CMD ["python", "app.py"]
