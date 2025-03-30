@@ -7,6 +7,6 @@ def home():
     return jsonify({"message": "Hello, CI/CD!"})
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5050)
 
 
